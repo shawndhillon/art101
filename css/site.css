@@ -12,6 +12,7 @@ body {
 /* we can have rules apply to multiple elements at the same time with commas */
 h1,h2,h3 {
   font-family: sans-serif;
+  color: white
 }
 
 /* and we can have rules that overlap other rules, both take effect */
@@ -19,7 +20,6 @@ h1 {
   letter-spacing: 5px;
   word-spacing: 5px;
   font-size: 200%;
-  color: white
 }
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
@@ -27,7 +27,7 @@ h1 {
   margin: 10px;
   padding: 10px;
   border: solid 1px #ffffff00; 
-  background-color: #BD93F9; 
+  background-color: #6272A4; 
   /* border: solid 1px #888; 
   background-color: #84B59F; */
 }
