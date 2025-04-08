@@ -33,10 +33,10 @@ h4 {
 #content {
   margin: 10px;
   padding: 10px;
-  border: solid 1px #ffffff00; 
+  border: solid 1px #BD93F9; 
   background-color: #6272A4;
 
-  border-radius: 10px; 
+  border-radius: 15px; 
   /* border: solid 1px #888; 
   background-color: #84B59F; */
 }
@@ -45,10 +45,10 @@ h4 {
 .minor-section {
   padding: 10px;
   margin-bottom: 10px;
-  border: solid 1px #ffffff00;
+  border: solid 1px #BD93F9;
   background-color: #44475A; 
 
-  border-radius: 10px;
+  border-radius: 15px;
   /* border: solid 1px #888;
   background-color: #A3C9A8; */
 }

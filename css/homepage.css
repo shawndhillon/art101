@@ -6,10 +6,10 @@
 }
 
 .pet-photo {
-   margin: auto;
+  margin: auto;
   max-width: 400px;
   max-height: 400px;
   /*border.inset {border-style: inset;}*/
-  border: 2px solid #BD93F9;
+  border: 3px solid #BD93F9;
   border-radius: 25px;
 }
