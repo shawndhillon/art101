@@ -10,7 +10,7 @@ body {
 }
 
 /* we can have rules apply to multiple elements at the same time with commas */
-h1,h2,h3,h4 {
+h1,h2,h3 {
   font-family: sans-serif;
   color: white
 }
@@ -23,8 +23,9 @@ h1 {
 }
 
 h4 {
-  letter-spacing: 1px;
+  font-family: Arial;
   word-spacing: 1px;
+  text-indent: 25px;
   
   color: white
 }
