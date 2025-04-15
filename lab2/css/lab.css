@@ -7,9 +7,22 @@
     margin-bottom: 10px;
     border: solid 1px #888;
     background-color: #DDD8C4;
+
   }
 
+#content {
+  color: brown;
+  background-color: tan;
+}
+
+body{
+  background-color: tan;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 150%;
+}
+
 .pet-photo {
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 20px;
 }
