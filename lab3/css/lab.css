@@ -5,5 +5,14 @@
     padding: 10px;
     margin-bottom: 10px;
     border: solid 1px #888;
-    background-color: #DDD8C4;
+    color: white
   }
+
+.code-preview {
+  
+  max-width: 700px;
+  max-height: 700px;
+  /*border.inset {border-style: inset;}*/
+ 
+  border-radius: 10px;
+}
