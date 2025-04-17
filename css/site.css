@@ -29,6 +29,12 @@ h4 {
   
   color: white
 }
+h5 {
+  font-family: Arial;
+  word-spacing: 1px;
+  
+  color: white
+}
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
