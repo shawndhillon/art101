@@ -52,6 +52,6 @@ a {
 }
 
 .code-preview { 
-  max-height: 700px;
+  max-height: 500px;
   border-radius: 10px;
 }
