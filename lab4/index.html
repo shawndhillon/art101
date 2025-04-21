@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab X - Subject/Topic</title>
+	<title>Lab 4 - PsuedoCode and Problem Solving</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
   	<meta charset="UTF-8" />
@@ -23,14 +23,102 @@
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
 		<section>
-			<h1>Lab X - Subject/Topic</h1>
+			<h1>Lab 4 - PsuedoCode and Problem Solving</h1>
 			<div class="minor-section">
 					<h2>Simple Task Outline: Changing a tire</h2>
-					<p>  </p>
+					<ol>
+						<li>Gather tools/materials</li>
+						<ul>
+							<li>Spare Tire</li>
+							<li>Tire iron</li>
+							<li>Jack</li>
+							<li>Tire Wedges</li>
+						</ul>
+						<li>Setup</li>
+						<ul>
+							<li>Loosen Lugs</li>
+							<li>Wedge Tires</li>
+						</ul>
+						<li>Lift Car</li>
+						<ol>
+							<li>Locate solid area of frame</li>
+							<li>Place jack under</li>
+							<li>lift the car with the jack</li>
+						</ol>
+						<li>Tire Removal</li>
+						<ol>
+							<li>Remove lugs fully with tire iron</li>
+							<li>Remove Tire</li>
+						</ol>
+						<li>Attach Spare</li>
+						<ol>
+							<li>Mount Spare</li>
+							<li>Secure spare tire with lugs</li>
+						</ol>
+						<li>Finishing Up</li>
+						<ol>
+							<li>Lower car with jack</li>
+							<li>Give lugs a final tightening</li>
+							<li>Put away tools and materials</li>
+						</ol>
+					</ol> 
 			</div>
 
+			<div class="minor-section">
+				<h2>Creating Connect Four:</h2>
+				<ol>
+					<li>Print the board before each turn</li>
+					<li>Accept user input</li>
+					<li>Validate user move (check if column full)</li>
+					<li>Reprompt if invalid move</li>
+					<li>Place tile at topmost unfilled spot in chosen column</li>
+					<li>Check if Four are in a row</li>
+					<li>Repeat until board filled or Four in a Row</li>
+				</ol>
+			</div>
 
+			<div class="minor-section">
+				<h2>PsuedoCode: Connect Four</h2>
+				<pre><code>// Four in a Row
+// An implementation of the game
+// Shawn Dhillon <gdhill11@ucsc.edu>
+// April 2024
 
+// Print the board before each turn  
+    // Loop through each row  
+        // Loop through each column  
+            // Print X, O, or Space  
+            // Print a | between  
+        // Print a newline  
+        // Print a horizontal line after each row  
+        
+// Game loop  
+//Loop until board is full OR four in a row:  
+    // Accept user input  
+    // Prompt user for column choice  
+
+    // Validate user move  
+    // While chosen column is full:  
+        // Print "Choose another column"  
+        // Prompt user for new column choice  
+
+    // Place tile  
+    // Locate topmost empty row in chosen column  
+    // Place current player's tile (X/O)  
+
+    // Check for win  
+    // If four tiles in a row (horizontal/vertical/diagonal):  
+        // Print "Player {tile(X/O)} wins!"  
+        // Break loop/Return
+    
+    // Check for tie
+    // If all tiles filled
+      // Print("Tie Game")
+      // Break Loop/Return
+
+    // Switch players  
+    // Alternate current player (from X to O or O to X) </code></pre>
+			</div>
 			<div class="minor-section">
 					<h2>Challenge</h2>
 					<p>Restate the challenge of the lab here.</p>
@@ -53,6 +141,7 @@
 		</section>
 		<nav id="links">
 			<!-- Put links to other pages (including the homepage) here. -->
+			 <a href="https://shawndhillon.github.io/art101/ ">Shawn's Homepage</a>
 		</nav>
 	</main>
 </body>

@@ -22,6 +22,10 @@ h1 {
   font-size: 200%;
 }
 
+a {
+  color: #8BE9FD;
+}
+
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
