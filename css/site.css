@@ -12,7 +12,7 @@ body {
 /* we can have rules apply to multiple elements at the same time with commas */
 h1,h2,h3 {
   font-family: sans-serif;
-  color: white
+  color: white 
 }
 
 /* and we can have rules that overlap other rules, both take effect */
@@ -22,51 +22,28 @@ h1 {
   font-size: 200%;
 }
 
-h4 {
-  font-family: Arial;
-  word-spacing: 1px;
-  text-indent: 25px;
-  
-  color: white
-}
-h5 {
-  font-family: Arial;
-  word-spacing: 1px;
-  
-  color: white
-}
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
   margin: 10px;
   padding: 10px;
-  /* border: solid 1px #BD93F9; */
   background-color: #6272A4;
-
   border-radius: 15px; 
-  /* border: solid 1px #888; 
-  background-color: #84B59F; */
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
   padding: 10px;
   margin-bottom: 10px;
-  /* border: solid 1px #BD93F9; */
-  background-color: #44475A; 
-
+  background-color: #44475A !important; 
+  color: white !important;
   border-radius: 15px;
-  /* border: solid 1px #888;
-  background-color: #A3C9A8; */
 }
 
 .link-section {
   padding: 10px;
   margin-bottom: 10px;
-  /* border: solid 1px #BD93F9; */
   background-color: #44475A; 
 
   border-radius: 15px;
-  /* border: solid 1px #888;
-  background-color: #A3C9A8; */
 }
