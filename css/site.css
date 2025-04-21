@@ -48,6 +48,11 @@ a {
   padding: 10px;
   margin-bottom: 10px;
   background-color: #44475A; 
-
   border-radius: 15px;
+}
+
+.code-preview { 
+  max-width: 700px;
+  max-height: 700px;
+  border-radius: 10px;
 }
