@@ -5,7 +5,7 @@
 
 
 function loadSidebar() {
-  fetch('/sidebar.html')
+  fetch('sidebar.html')
     .then(response => response.text())
     .then(data => {
       const sidebarContainer = document.getElementById('sidebar-container');
@@ -16,4 +16,5 @@ function loadSidebar() {
 }
 
 document.addEventListener('DOMContentLoaded', loadSidebar);
+
 
