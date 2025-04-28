@@ -37,12 +37,12 @@ h1,h2,h3 {
   border-radius: 20px;
 }
 
-#content .link-section {
-  background-color: #DDD8C4!important; 
-  border: 2px solid brown !important;
-  color: brown!important; 
-}
-
 a {
   color: darkred!important; 
+}
+
+.link-section {
+  background-color: #DDD8C4!important; 
+  border: 2px solid brown !important;
+  color: brown !important;
 }
