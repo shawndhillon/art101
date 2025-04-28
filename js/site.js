@@ -2,20 +2,18 @@
 // Author: Your Name
 // Date:
 
-// Constants
 
-// Functions
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+function loadSidebar() {
+  fetch('/sidebar.html')
+    .then(response => response.text())
+    .then(data => {
+      const sidebarContainer = document.getElementById('sidebar-container');
+      if (sidebarContainer) {
+        sidebarContainer.innerHTML = data;
+      }
+    })
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+document.addEventListener('DOMContentLoaded', loadSidebar);
 
-// let's get this party started
-main();

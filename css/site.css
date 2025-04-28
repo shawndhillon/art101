@@ -29,18 +29,20 @@ a {
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
+  flex: 1;
   margin: 10px;
   padding: 10px;
   background-color: #6272A4;
-  border-radius: 15px; 
+  border-radius: 15px;
+  overflow-y: auto;
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
   padding: 10px;
   margin-bottom: 10px;
-  background-color: #44475A !important; 
-  color: white !important;
+  background-color: #44475A; 
+  color: white;
   border-radius: 15px;
 }
 
@@ -48,15 +50,6 @@ a {
   border: 3px solid #BD93F9;
   border-radius: 15px;
   padding: 10px;
-  
-
-}
-
-.link-section {
-  padding: 10px;
-  margin-bottom: 10px;
-  background-color: #44475A; 
-  border-radius: 15px;
 }
 
 .code-preview { 
@@ -66,7 +59,44 @@ a {
 
 .photo-section {
   display: flex;
+  align-self: auto;
   justify-content: center;
   background-color: #44475A; 
   border-radius: 15px;
 }
+
+.page-wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 225px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+}
+
+.link-container {
+  flex: 1;
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+  gap: 15px; 
+
+}
+
+.link-section {
+  background-color: #6272A4;
+  border: 2px solid #BD93F9;
+  padding: 2px;
+  color: white;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
