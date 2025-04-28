@@ -1,14 +1,13 @@
- /* Here we can set styles for this lab page that we don't want to effect others pages */
+/* Here we can set styles for this lab page that we don't want to effect others pages */
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 
-.minor-section {
+#content .minor-section {
     padding: 10px;
     margin-bottom: 10px;
     border: solid 1px #888!important; 
     background-color: #DDD8C4!important; 
     color: brown!important; 
-
 }
 
 #content {
@@ -21,14 +20,14 @@
   overflow-y: auto;
 }
 
-body{
+body {
   background-color: tan!important; 
   font-family:'Courier New', Courier, monospace;
   font-size: 150%;
 }
 
-h1,h2,h3 {
- color: brown!important; 
+#content h1, #content h2, #content h3 {
+  color: brown!important; 
 }
 
 .pet-photo {
@@ -37,12 +36,12 @@ h1,h2,h3 {
   border-radius: 20px;
 }
 
-a {
+#content a {
   color: darkred!important; 
 }
 
-.link-section {
+#content .link-section {
   background-color: #DDD8C4!important; 
-  border: 2px solid brown !important;
-  color: brown !important;
+  border: 2px solid brown!important;
+  color: brown!important;
 }
