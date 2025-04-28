@@ -14,6 +14,11 @@
 #content {
   color: brown!important; 
   background-color: tan!important; 
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  overflow-y: auto;
 }
 
 body{
@@ -32,7 +37,7 @@ h1,h2,h3 {
   border-radius: 20px;
 }
 
-.link-section {
+#content .link-section {
   background-color: #DDD8C4!important; 
   border: 2px solid brown !important;
   color: brown!important; 
