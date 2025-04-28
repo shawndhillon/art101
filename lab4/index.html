@@ -23,8 +23,13 @@
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<div class="page-wrapper">
 		<div id="sidebar-container">
-			<script src="/js/site.js" defer></script>
+				
 		</div>
+		<script>
+					$(function(){
+					$("#sidebar-container").load("../sidebar.html");
+					});
+				</script>
 	<main id="content">
 		<section>
 			<h1>Lab 4 - PsuedoCode and Problem Solving</h1>
