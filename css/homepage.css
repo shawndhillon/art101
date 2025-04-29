@@ -1,5 +1,6 @@
 /* this css file will only style the homepage of our site */
 
+/* Photo styles */
 .cat-photo {
   margin: 10px;
   max-width: 500px;
@@ -11,27 +12,54 @@
   border: 3px solid #BD93F9;
   border-radius: 25px;
   margin-inline: 2%;
-  
 }
-
 
 .photo-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  
   padding: 10px;
   margin-bottom: 10px;
   background-color: #44475A; 
   border-radius: 15px;
 }
 
+/* Text styles */
 p {
-  font-size:150%;
-  color:white;
+  font-size: 150%;
+  color: white;
 }
 
-a {
+/* Link section styles */
+.link-section {
+  display: block;
+  cursor: pointer;
+}
+
+.link-section a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.link-section img {
+  display: block;
+  margin: 0 auto;
+}
+
+.link-section p {
+  margin: 0;
+  padding: 10px;
   color: #8BE9FD;
+}
+
+.link-section:hover {
+  border-radius: 100px;
+  background-color: #282A36;
+}
+
+.link-section:hover p {
+  color: #FF79C6;
 }
 

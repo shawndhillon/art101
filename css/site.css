@@ -3,7 +3,6 @@
 /* you can pick your own background colors, text colors, and fonts */
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
-
 body {
   /* background-color: #50808E; */
   background-color: #282A36; 
@@ -26,6 +25,10 @@ a {
   color: #8BE9FD;
 }
 
+a:hover, .link-section:hover, p:hover {
+  color: #FF79C6;
+  border-color: #FF79C6;
+}
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
@@ -72,7 +75,6 @@ a {
 
 .sidebar {
   width: 225px;
-  color: white;
   display: flex;
   flex-direction: column;
   height: 100vh; 
@@ -84,19 +86,45 @@ a {
   overflow-y: auto;
   flex-direction: column;
   gap: 15px; 
-
 }
 
+/* Link section styles */
 .link-section {
+  display: block;
+  cursor: pointer;
   background-color: #6272A4;
   border: 2px solid #BD93F9;
   padding: 2px;
-  color: white;
+  color: #8BE9FD;
   border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
+}
+
+.link-section a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.link-section img {
+  display: block;
+  margin: 0 auto;
+}
+
+.link-section p {
+  margin: 0;
+  padding: 10px;
+  color: #8BE9FD;
+}
+
+.link-section:hover {
+  border-radius: 100px;
+  background-color: #282A36;
+}
+
+.link-section:hover p {
+  color: #FF79C6;
 }
 
 
