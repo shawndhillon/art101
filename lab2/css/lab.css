@@ -8,7 +8,6 @@
     border: solid 1px #888!important; 
     background-color: #DDD8C4!important; 
     color: brown!important; 
-
 }
 
 #content {
@@ -44,5 +43,14 @@ a {
 .link-section {
   background-color: #DDD8C4 !important; 
   border: 2px solid brown !important;
+  color: brown !important;
+  padding: 10px !important;
+  margin: 5px !important;
+  word-break: break-word !important;
+}
+
+.link-section p {
+  margin: 0 !important;
+  padding: 5px !important;
   color: brown !important;
 }
