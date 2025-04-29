@@ -1,6 +1,6 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - sort username
+// Author: Shawn Dhillon
+// Date: 4/28
 
 // Constants
 
