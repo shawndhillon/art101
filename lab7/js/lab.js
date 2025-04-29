@@ -6,13 +6,13 @@
 
 // Functions
 function sortUserName(){
-  var username = window.prompt("give your username to be fixed");
+  var username = window.prompt("give your username to be alphabetized");
   console.log("username =", username);
 
   var namearray = username.split('');
   console.log("namearray =", namearray);
 
-  var namearraysort = username.sort();
+  var namearraysort = namearray.sort();
   console.log("namearraysort =", namearraysort);
 
   var namesorted = namearraysort.join('');
@@ -21,4 +21,4 @@ function sortUserName(){
   return namesorted;
 }
 
-document.writeln("Your fixed named is: ", sortUserName(), "</br>")
+document.writeln("Your alphabetized named is: ", sortUserName(), "</br>")
