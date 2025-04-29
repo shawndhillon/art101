@@ -21,7 +21,6 @@ h1 {
   font-size: 200%;
 }
 
-
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
   flex: 1;
@@ -44,7 +43,8 @@ h1 {
 .code-section {
   border: 3px solid #BD93F9;
   border-radius: 15px;
-  padding: 10px;
+  padding: 15px;
+  background-color: #282A36;
 }
 
 .code-preview { 
@@ -85,11 +85,14 @@ h1 {
 .link-section {
   display: block;
   cursor: pointer;
-  background-color: #6272A4;
+  background-color: #44475A;
   border: 2px solid #BD93F9;
+  padding: 2px;
+  color: #8BE9FD;
   border-radius: 15px;
   text-align: center;
-  transition: transform 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .link-section a {
@@ -111,7 +114,7 @@ h1 {
 }
 
 .link-section:hover {
-  border-radius: 50px;
+  border-radius: 35px;
   background-color: #282A36;
   border-color: #FF79C6;
   transform: scale(1.1);
