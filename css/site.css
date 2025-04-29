@@ -94,7 +94,6 @@ h1 {
   border-radius: 15px;
   text-align: center;
   transition: all 0.2s ease-in-out;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .link-section a {
