@@ -6,11 +6,12 @@
 body {
   /* background-color: #50808E; */
   background-color: #282A36; 
+  font-family: monospace;
 }
 
 /* we can have rules apply to multiple elements at the same time with commas */
 h1,h2,h3 {
-  font-family: sans-serif;
+  font-family: Monaco, monospace;
   color: white 
 }
 
@@ -50,6 +51,7 @@ h1 {
 .code-preview { 
   max-height: 500px;
   border-radius: 10px;
+  padding-bottom: 10px;
 }
 
 .photo-section {
