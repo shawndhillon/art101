@@ -5,17 +5,20 @@
 // Constants
 
 // Functions
+function sortUserName(){
+  var username = window.prompt("give your username to be fixed");
+  console.log("username =", username);
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+  var namearray = username.split('');
+  console.log("namearray =", namearray);
+
+  var namearraysort = username.sort();
+  console.log("namearraysort =", namearraysort);
+
+  var namesorted = namearraysort.join('');
+  console.log("namesorted =", namesorted);
+
+  return namesorted;
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
+document.writeln("Your fixed named is: ", sortUserName(), "</br>")
