@@ -27,9 +27,20 @@
 /* Text styles */
 p {
   font-size: 150%;
- 
 }
 
+.link-photo {
+  max-width: 500px;
+  max-height: 500px;
+  border: 3px solid #BD93F9;
+  border-radius: 25px;
+  margin-inline: 2%;
+  transition: transform 0.2s ease-in-out;
+}
 
+.link-photo:hover {
+  border-color: #FF79C6;
+  transform: scale(1.05);
+}
 
 
