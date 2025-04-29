@@ -21,14 +21,6 @@ h1 {
   font-size: 200%;
 }
 
-a {
-  color: #8BE9FD;
-}
-
-a:hover, .link-section:hover, p:hover {
-  color: #FF79C6;
-  border-color: #FF79C6;
-}
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
@@ -85,7 +77,8 @@ a:hover, .link-section:hover, p:hover {
   display: flex;
   overflow-y: auto;
   flex-direction: column;
-  gap: 15px; 
+  gap: 15px;
+  padding: 10px 10px;
 }
 
 /* Link section styles */
@@ -94,10 +87,9 @@ a:hover, .link-section:hover, p:hover {
   cursor: pointer;
   background-color: #6272A4;
   border: 2px solid #BD93F9;
-  padding: 2px;
-  color: #8BE9FD;
   border-radius: 15px;
   text-align: center;
+  transition: transform 0.2s ease-in-out;
 }
 
 .link-section a {
@@ -109,22 +101,25 @@ a:hover, .link-section:hover, p:hover {
 
 .link-section img {
   display: block;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .link-section p {
   margin: 0;
-  padding: 10px;
-  color: #8BE9FD;
+  padding: 5px;
+  color: white;
 }
 
 .link-section:hover {
-  border-radius: 100px;
+  border-radius: 50px;
   background-color: #282A36;
+  border-color: #FF79C6;
+  transform: scale(1.1);
 }
 
 .link-section:hover p {
   color: #FF79C6;
 }
+
 
 
