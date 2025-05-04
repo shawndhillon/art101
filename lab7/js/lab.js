@@ -5,7 +5,7 @@
 // Constants
 
 // Functions
-function sortUserName(name) {
+function sortUserName(username) {
   // removes all spaces from the username
   let username_no_spaces = username.replaceAll(" ", "");
   console.log("username_no_spaces =", username_no_spaces);
@@ -30,9 +30,21 @@ function sortUserName(name) {
 
 
 // Prompt user for their name (outside functions)
-let username = window.prompt("Give your username to be alphabetized and shuffled");
+//let username = window.prompt("Give your username to be alphabetized and shuffled");
 
-// Output results
 // writes out the sorted name and username
-document.writeln("Your original username is: ", username, "</br>")
-document.writeln("Your alphabetized username is: ", sortUserName(), "</br>")
+//document.writeln("Your original username is: ", username, "</br>")
+//document.writeln("Your alphabetized username is: ", sortUserName(), "</br>")
+
+// jquery to make button work
+$(function() {
+  $("#sort-button").click(function() {
+    const username = $("#username-input").val();
+    const sorted = sortUserName(username);
+    // replaces html inside #outputwith usernames
+    $("#output").html(
+      "Your original username is: " + username + "<br>" +
+      "Your alphabetized username is: " + sorted + "<br>"
+    );
+  });
+});

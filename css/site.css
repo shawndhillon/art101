@@ -130,5 +130,7 @@ p {
   font-size: 150%;
 }
 
-
+#output {
+  margin-top: 1em;
+}
 
