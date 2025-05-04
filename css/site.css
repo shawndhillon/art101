@@ -39,6 +39,7 @@ h1 {
   background-color: #44475A; 
   color: white;
   border-radius: 15px;
+  border: solid 1px #BD93F9;
 }
 
 .code-section {
