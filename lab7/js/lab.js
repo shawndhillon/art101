@@ -23,11 +23,10 @@ function sortUserName(username) {
   var namesorted = namearraysort.join('');
   console.log("namesorted =", namesorted);
 
+  
   // returns the sorted string
   return namesorted;
 }
-
-
 
 // Prompt user for their name (outside functions)
 //let username = window.prompt("Give your username to be alphabetized and shuffled");
@@ -44,7 +43,7 @@ $(function() {
     // replaces html inside #outputwith usernames
     $("#output").html(
       "Your original username is: " + username + "<br>" +
-      "Your alphabetized username is: " + sorted + "<br>"
+      "Your alphabetized username is: " + sorted + "<br>" 
     );
   });
 });
