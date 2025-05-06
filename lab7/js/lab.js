@@ -29,7 +29,7 @@ function sortUserName(username) {
 }
 
 // Prompt user for their name (outside functions)
-//let username = window.prompt("Give your username to be alphabetized and shuffled");
+//let username = window.prompt("Give your username to be alphabetized");
 
 // writes out the sorted name and username
 //document.writeln("Your original username is: ", username, "</br>")
