@@ -33,6 +33,7 @@ body {
 
 h1,h2,h3 {
  color: var(--font)!important; 
+ 
 }
 
 
@@ -54,4 +55,8 @@ h1,h2,h3 {
 
 .link-section:hover p {
   color: var(--hover) !important;
+}
+
+.code-section {
+  border: 3px solid var(--border) !important;
 }

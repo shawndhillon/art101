@@ -6,12 +6,12 @@
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 
 :root {
-    --font: white;
-    --outerbg: #282A36;
-    --innerbg:  #6272A4;
-    --foreground: #44475A;
-    --border: #BD93F9;
-    --hover: #FF79C6;
+    --font: #f8f2eb;
+    --outerbg: #6479d6;
+    --innerbg: #B3d7ed; 
+    --foreground: #6497d6;
+    --border: #491fd3;
+    --hover: #491fd3;
 }
 
 
@@ -23,7 +23,7 @@
 }
 
 #content {
-  color: var(--font) !important; 
+  color: var(--font) !important;
   background-color: var(--innerbg)!important; 
 }
 
@@ -33,6 +33,8 @@ body {
 
 h1,h2,h3 {
  color: var(--font)!important; 
+ text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
 }
 
 
@@ -54,4 +56,8 @@ h1,h2,h3 {
 
 .link-section:hover p {
   color: var(--hover) !important;
+}
+
+.code-section {
+  border: 3px solid var(--border) !important;
 }

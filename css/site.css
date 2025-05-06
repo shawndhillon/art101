@@ -12,7 +12,8 @@ body {
 /* we can have rules apply to multiple elements at the same time with commas */
 h1,h2,h3 {
   font-family: Monaco, monospace;
-  color: white 
+  color: white ;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 /* and we can have rules that overlap other rules, both take effect */
