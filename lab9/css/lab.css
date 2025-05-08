@@ -7,29 +7,31 @@
 
 :root {
     --font: white;
-    --outerbg: #282A36;
-    --innerbg:  #6272A4;
-    --foreground: #44475A;
+    --outerbg: #34294f;
+    --innerbg:  #232530 ;
+    --foreground: #34294f;
     --border: #BD93F9;
-    --hover: #FF79C6;
+    --hover: #f97e72;
 }
 
 .special {
-    background-color: lavender !important;
-    border: dashed 5px skyblue !important;
-    color: #BD93F9 !important;
+    background-color: #232530 !important;
+    border: groove 10px #f97e72 !important;
+    color: #f97e72  !important;
     font-weight: bold;
+    display:grid ;
+    justify-content: center ;
+    border-radius: 1px !important;
 }
 
 .special-sections {
   padding: 10px;
   margin-bottom: 10px;
-  background-color: #44475A; 
-  color: white;
+  background-color: var(--foreground); 
+  color: var(--font);
   border-radius: 15px;
-  border: solid 1px #BD93F9;
+  border: solid 1px var(--border);
 }
-
 
 .minor-section {
     border: solid 1px var(--border); 
