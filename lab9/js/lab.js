@@ -8,12 +8,12 @@
 
 
 // add button to challenge section
-$("#challenge").append("<button id='button-challenge'>Make Special</button>"
+$(".special-sections").append("<button>Make Special</button>"
    + "\xA0" + "Am I Special?"
 );
 
 // add a click listener to the challenge button
-$("#button-challenge").click(function(){
+$(".special-sections button").click(function(){
     // now add (or subtract) the "special" class to the section
-    $("#challenge").toggleClass("special");
+    $(this).parent().toggleClass("special");
 });

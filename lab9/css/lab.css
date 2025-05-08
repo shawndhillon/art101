@@ -15,33 +15,39 @@
 }
 
 .special {
-    background-color: beige;
-    border: dashed 5px maroon;
-    color: pink;
+    background-color: lavender !important;
+    border: dashed 5px skyblue !important;
+    color: #BD93F9 !important;
     font-weight: bold;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    font-size: 300%;
 }
 
+.special-sections {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #44475A; 
+  color: white;
+  border-radius: 15px;
+  border: solid 1px #BD93F9;
+}
+
+
 .minor-section {
-    border: solid 1px var(--border)!important; 
-    background-color: var(--foreground)!important; 
-    color: var(--font)!important; 
+    border: solid 1px var(--border); 
+    background-color: var(--foreground); 
+    color: var(--font); 
 }
 
 #content {
-  color: var(--font) !important; 
-  background-color: var(--innerbg)!important; 
+  color: var(--font) ; 
+  background-color: var(--innerbg); 
 }
 
 body {
-  background-color: var(--outerbg)!important; 
+  background-color: var(--outerbg); 
 }
 
 h1,h2,h3 {
- color: var(--font)!important; 
+ color: var(--font); 
  
 }
 
