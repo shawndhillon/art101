@@ -1,0 +1,71 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+
+:root {
+    --font: white;
+    --outerbg: #282A36;
+    --innerbg:  #6272A4;
+    --foreground: #44475A;
+    --border: #BD93F9;
+    --hover: #FF79C6;
+}
+
+.special {
+    background-color: beige;
+    border: dashed 5px maroon;
+    color: pink;
+    font-weight: bold;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: 300%;
+}
+
+.minor-section {
+    border: solid 1px var(--border)!important; 
+    background-color: var(--foreground)!important; 
+    color: var(--font)!important; 
+}
+
+#content {
+  color: var(--font) !important; 
+  background-color: var(--innerbg)!important; 
+}
+
+body {
+  background-color: var(--outerbg)!important; 
+}
+
+h1,h2,h3 {
+ color: var(--font)!important; 
+ 
+}
+
+
+
+.link-section {
+  background-color: var(--foreground) !important; 
+  border: 2px solid var(--border) !important;
+  color: var(--font) !important;
+}
+
+.link-section p {
+  color: var(--font) !important;
+}
+
+.link-section:hover {
+  border-color: var(--hover) !important;
+  background-color: var(--outerbg);
+}
+
+.link-section:hover p {
+  color: var(--hover) !important;
+}
+
+.code-section {
+  border: 3px solid var(--border) !important;
+}
