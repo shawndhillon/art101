@@ -6,16 +6,27 @@
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 
 :root {
-    --font: white;
-    --outerbg: #282A36;
-    --innerbg:  #6272A4;
-    --foreground: #44475A;
-    --border: #BD93F9;
-    --hover: #FF79C6;
+    --font: #000000;
+    --outerbg: #FDF6F0;
+    --innerbg:  #F6E7FB;
+    --foreground: #BEE3DB ;
+    --border: #A3C4F3;
+    --hover: #A3C4F3;
     --outline: 0.35;
 }
 
-
+.text p {
+  display: inline-block;
+  max-width: 60%;
+  margin: 3px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: #F6E7FB;
+  color: #000000 ;
+  font-family: sans-serif;
+  font-size: 0.8em;
+  border: 2px solid var(--border);
+}
 
 .minor-section {
     border: solid 1px var(--border)!important; 
@@ -47,8 +58,8 @@ h1,h2,h3 {
 
 .link-section p {
   color: var(--font) !important;
+  text-shadow: -1px 0 rgba(0, 0, 0, var(--outline)), 0 1px rgba(0, 0, 0, var(--outline)), 1px 0 rgba(0, 0, 0, var(--outline)), 0 -1px rgba(0, 0, 0, var(--outline)) !important;
 }
-
 
 .link-section:hover {
   border-color: var(--hover) !important;
@@ -57,9 +68,37 @@ h1,h2,h3 {
 
 .link-section:hover p {
   color: var(--hover) !important;
-  text-shadow: -1px 0 rgba(0, 0, 0, var(--outline)), 0 1px rgba(0, 0, 0, var(--outline)), 1px 0 rgba(0, 0, 0, var(--outline)), 0 -1px rgba(0, 0, 0, var(--outline)) !important;
 }
 
 .code-section {
   border: 3px solid var(--border) !important;
+}
+
+#output {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  display: flex;
+}
+
+#output .text:nth-child(odd) {
+  justify-content: flex-start;
+}
+#output .text:nth-child(even) {
+  justify-content: flex-end;
+}
+
+.chat-box {
+  margin: 1em 0;
+  display: flex; 
+  gap: 0.5em;
+}
+
+.reply {
+  flex:1;
+  padding: 0.5em; 
+  border-radius: 10px; 
+  border: 1px solid var(--border);
 }
