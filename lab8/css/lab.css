@@ -11,7 +11,7 @@
     --innerbg: #B3d7ed; 
     --foreground: #6497d6;
     --border: #491fd3;
-    --hover: #491fd3;
+    --hover: rgb(163, 226, 242);
 }
 
 
@@ -33,7 +33,6 @@ body {
 
 h1,h2,h3 {
  color: var(--font)!important; 
- text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
 }
 
