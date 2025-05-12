@@ -28,6 +28,35 @@
   border: 2px solid var(--border);
 }
 
+#output {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  display: flex;
+}
+
+#output .text:nth-child(odd) {
+  justify-content: flex-start;
+}
+#output .text:nth-child(even) {
+  justify-content: flex-end;
+}
+
+.chat-box {
+  margin: 1em 0;
+  display: flex; 
+  gap: 0.5em;
+}
+
+.reply {
+  flex:1;
+  padding: 0.5em; 
+  border-radius: 10px; 
+  border: 1px solid var(--border);
+}
+
 .minor-section {
     border: solid 1px var(--border)!important; 
     background-color: var(--foreground)!important; 
@@ -74,31 +103,3 @@ h1,h2,h3 {
   border: 3px solid var(--border) !important;
 }
 
-#output {
-  display: flex;
-  flex-direction: column;
-}
-
-.text {
-  display: flex;
-}
-
-#output .text:nth-child(odd) {
-  justify-content: flex-start;
-}
-#output .text:nth-child(even) {
-  justify-content: flex-end;
-}
-
-.chat-box {
-  margin: 1em 0;
-  display: flex; 
-  gap: 0.5em;
-}
-
-.reply {
-  flex:1;
-  padding: 0.5em; 
-  border-radius: 10px; 
-  border: 1px solid var(--border);
-}
