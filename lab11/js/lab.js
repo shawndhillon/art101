@@ -16,26 +16,30 @@ function sortString(inputString) {
 // Sorts the characters of a string in alphabetical order.
 function anagram(inputString) {
   // We have to convert our string to an array and back again to sort it
-  ana = inputString.split('');
-
-  ana = ana.sort(function(){return 0.5 - Math.random()});
-
-  return ana.join('');
+  array = inputString.split('');
+  // makes sure the array isn't made of all the same character 
+  // verifies an anagram exists
+  if (array.every(element => element === array[0])){
+    return "No Anagram Exists";
+  }
+  // sorts array in a random pattern and joins it to make a string
+  // repeats if the string is the same as input string
+  ana = inputString;
+  while(ana == inputString){
+    anagram_array = array.sort(function(){return 0.5 - Math.random()});
+    ana = anagram_array.join('');
+  }
+  // return string
+  return ana;
 }
-
 
 // click listener for button
 $("#submit").click(function(){
     // get value of input field
     const userName = $("#user-name").val();
-
     // now let's sort it
     userNameSorted = sortString(userName);
-    
-    ana = anagram(userName);
-
     // append a new div to our output div
-    //$("#output").html('<div class="text"><p>' + userNameSorted + '<br>' + ana + '</p></div>');
     $("#output").html('<div class="text"><p>' + userNameSorted +'</p></div>');
 });
 
@@ -43,24 +47,10 @@ $("#submit").click(function(){
 $("#anagram").click(function(){
     // get value of input field
     const userName = $("#user-name").val();
-
-    if( userName.length < 2){
-      $("#output").html('<div class="text"><p>' + "Try again with a longer input." + '</p></div>');
-      return;
-    }
-    
+    // call anagram function
     ana = anagram(userName);
-
-    attempts = 10;
-    while (ana == userName && attempts > 0){
-      ana = anagram(userName);
-      attempts = attempts - 1;
-    }
-   
     // append a new div to our output div
-    $("#output").html('<div class="text"><p>' + ana + '</p></div>');
-    
-    
+    $("#output").html('<div class="text"><p>' + ana + '</p></div>');   
 });
 
 
