@@ -6,13 +6,13 @@
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 
 :root {
-    --font: white;
-    --outerbg: #282A36;
-    --innerbg:  #6272A4;
-    --foreground: #44475A;
-    --border: #BD93F9;
-    --hover: #FF79C6;
-    --outline: 0.35;
+    --font: #300000;       
+    --outerbg: #FFF2E6;      
+    --innerbg: #FFB3A7;      
+    --foreground: #E34234;   
+    --border: #8B0000;       
+    --hover: #FFF2E6;    
+    --outline: 0.35;  
 }
 
 
@@ -61,4 +61,5 @@ h1,h2,h3 {
 
 .code-section {
   border: 3px solid var(--border) !important;
+  color: var(--hover) !important;
 }
