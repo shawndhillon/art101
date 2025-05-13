@@ -44,10 +44,23 @@ $("#anagram").click(function(){
     // get value of input field
     const userName = $("#user-name").val();
 
+    if( userName.length < 2){
+      $("#output").html('<div class="text"><p>' + "Try again with a longer input." + '</p></div>');
+      return;
+    }
+    
     ana = anagram(userName);
 
+    attempts = 10;
+    while (ana == userName && attempts > 0){
+      ana = anagram(userName);
+      attempts = attempts - 1;
+    }
+   
     // append a new div to our output div
     $("#output").html('<div class="text"><p>' + ana + '</p></div>');
+    
+    
 });
 
 
