@@ -54,3 +54,36 @@ $("#anagram").click(function(){
 });
 
 
+
+
+// add a click listener for all the special sections and a button
+$("#glitch").click(function(){
+  // changes respective classes and ids to the special theme
+    $(".minor-section").toggleClass("special");
+    $("#content").toggleClass("special");
+    $(".link-section").toggleClass("special");
+});
+
+function timedGlitch() {
+  // changes respective classes and ids to the special theme
+  $(".minor-section").toggleClass("special");
+  $("#content").toggleClass("special");
+  $(".link-section").toggleClass("special");
+  // counter to set number of times to glitch
+  count += 1;
+  if (count <= 5) {
+    // waits 500 ms then calls itself
+    setTimeout(timedGlitch, 500); 
+  } else {
+    // Resets respective classes and ids from the special theme
+    $(".minor-section").removeClass("special");
+    $("#content").removeClass("special");
+    $(".link-section").removeClass("special");
+  }
+}
+
+$("#glitch-timed").click(function () {
+  // on button press calls timedGlitch
+  count = 0;
+  timedGlitch();
+});

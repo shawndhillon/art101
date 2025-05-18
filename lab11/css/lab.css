@@ -15,7 +15,23 @@
     --outline: 0.35;  
 }
 
+.special {
+  filter: hue-rotate(720deg);
+  animation: shake 0.15s infinite alternate;
+  transition: 0.5s;
+}
 
+@keyframes shake{
+  0% {
+    transform: translate(0px, 0px) ;
+  }
+  50% {
+    transform: translate(2px, -2px) ;
+  }
+  100% {
+    transform: translate(-1px, 1px) ;
+  }
+}
 
 .minor-section {
     border: solid 1px var(--border)!important; 
