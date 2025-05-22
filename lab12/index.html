@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- This title is used for tabs and bookmarks -->
+	<title>Lab 11 - Conditionals</title>
+
+	<link rel="shortcut icon" href="../img/slug.ico"/> 
+
+	<!-- Use UTF character set, a good idea with any webpage -->
+  	<meta charset="UTF-8" />
+	<!-- Set viewport so page remains consistently scaled w narrow devices -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- Include a sitewide CSS file for consistent styling across the site -->
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<!-- Lab-specifc CSS file for any special styling of this particular page -->
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+	<script src="js/lab.js" DEFER></script>
+	
+</head>
+<body>
+	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
+	 <div class="page-wrapper">
+		<div id="sidebar-container"></div>
+		<script>
+					$(function(){
+					$("#sidebar-container").load("../sidebar.html");
+					});
+		</script>
+	<main id="content">
+		<section>
+			<h1>Lab 11 - Conditionals</h1>
+			<div class="minor-section">
+					<h2>Challenge</h2>
+					<p>Restate the challenge of the lab here.</p>
+			</div>
+
+			<div class="minor-section">
+					<h2>Problems</h2>
+					<p>What problems arose? How did you solve them? </p>
+			</div>
+
+			<div class="minor-section">
+					<h2>Results</h2>
+					<div class="code-section">
+
+					<input type="text"  id="input" style="width: 250px" placeholder="Please enter your name for sorting ">
+
+					<button id="submit"> Submit </button>
+					
+					</div>
+
+					<div id="output"></div>
+
+
+					<div class="minor-section">
+					<h2>Bonus Quiz</h2>
+
+						<form id="quiz-form">
+						<p>If you were attending Hogwarts, which pet would you choose to take with you?</p>
+						<label> <input type="radio" name="q1" value="slytherin"> Snake </label>
+						<br>
+						<label> <input type="radio" name="q1" value="gryffindor"> Dog </label>
+						<br>
+						<label> <input type="radio" name="q1" value="hufflepuff"> Cat </label>
+						<br>
+						<label> <input type="radio" name="q1" value="ravenclaw"> Bird </label>
+						<br><br>
+
+					
+						<p>You and two friends need to cross a bridge guarded by a river troll who insists on fighting one of you before he will let all of you pass. Do you:</p>
+						<label> <input type="radio" name="q2" value="slytherin"> Make a deal </label>
+						<br>
+						<label> <input type="radio" name="q2" value="gryffindor"> Volunteer to fight the troll yourself </label>
+						<br>
+						<label> <input type="radio" name="q2" value="hufflepuff"> Fight the troll together </label>
+						<br>
+						<label><input type="radio" name="q2" value="ravenclaw"> Look for another path past</label>
+						<br><br>
+
+
+						<p>What trait do you value most?</p>
+						<label><input type="radio" name="q3" value="gryffindor"> Bravery</label>
+						<br>
+						<label><input type="radio" name="q3" value="slytherin"> Ambition</label>
+						<br>
+						<label><input type="radio" name="q3" value="hufflepuff"> Loyalty</label>
+						<br>
+						<label><input type="radio" name="q3" value="ravenclaw"> Intelligence</label>
+						<br><br>
+
+
+						<p>You’ve been given detention for something you didn’t do, how do you handle it?</p>
+						<label><input type="radio" name="q4" value="gryffindor"> Do the detention and get through it – rules are rules</label>
+						<br>
+						<label><input type="radio" name="q4" value="slytherin"> Convince the teacher it was a misunderstanding and walk out scot-free</label>
+						<br>
+						<label><input type="radio" name="q4" value="hufflepuff"> Protest loudly! You won’t take the fall for this!</label>
+						<br>
+						<label><input type="radio" name="q4" value="ravenclaw"> Use it as time to read that book you’ve been meaning to finish</label>
+						<br><br>
+
+						<p>You walk into a room and see a mysterious chest glowing in the corner, what do you do?</p>
+							<label> <input type="radio" name="q5" value="slytherin"> Plot the best way to take it without getting caught </label>
+						<br>
+						<label> <input type="radio" name="q5" value="gryffindor"> Check it out! Adventure awaits! </label>
+						<br>
+						<label> <input type="radio" name="q5" value="hufflepuff"> Check if anyone else might need help with it first </label>
+						<br>
+						<label><input type="radio" name="q5" value="ravenclaw"> Analyse the chest carefully, what kind of magic could this be?</label>
+						<br><br>
+
+						<button type="submit">Submit</button>
+						<br><br><br>
+						</form>
+						<div id="results"></div>
+						<br><br>
+
+					</div>
+			</div>
+			</div>
+			
+		</section>
+		<!-- <nav id="links"> </nav> -->
+			<!-- Put links to other pages (including the homepage) here. -->
+	</main>
+</div>
+</body>
+</html>
