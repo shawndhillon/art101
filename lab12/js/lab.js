@@ -59,6 +59,13 @@ function hashCode(str) {
 document.getElementById("quiz-form").addEventListener("submit", function (event) {
     event.preventDefault();
 
+    s =  "If you were placed in this house, then you are most likely ambitious, shrewd and possibly destined for greatness. We can imagine you’re the kind of person who is always one step ahead, has a dark sense of humour, thinks reputation is important, takes pride in their appearance and doesn’t let anyone see their soft side.";
+    h = "If you were placed in this house, we can imagine you’re the type of person who has a strong moral compass, always works hard, is the most loyal friend, knows it is the taking part that counts and always has the best snacks.";
+    r =  "If you were placed in this house, you have demonstrated excellent wisdom, wit and a skill for learning. Ravenclaws are often known for being quite eccentric and most of the great wizarding inventors and innovators have come from this house.";
+    g = "If you were placed in this house, you would have demonstrated qualities like courage, bravery and determination. Some of the wizarding world’s best and brightest belonged to this house – Harry Potter and Albus Dumbledore are just a couple that spring to mind!";
+
+    const desc = [g,s,h,r];
+
     const numQuestions = 5;
     const houses = ["gryffindor", "slytherin", "hufflepuff", "ravenclaw"];
     let gryffindor = 0;
@@ -81,5 +88,6 @@ document.getElementById("quiz-form").addEventListener("submit", function (event)
     const maxScore = Math.max(...scores);
     const House = houses[scores.indexOf(maxScore)];
 
-    document.getElementById("results").textContent = `You belong to ${House}!`;
+    
+     $("#results").html('<div class="text"><p>'+ "You belong to " + House  + ".<br><br>" +  desc[scores.indexOf(maxScore)] +'</p></div>'  );
 });

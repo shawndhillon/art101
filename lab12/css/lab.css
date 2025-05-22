@@ -6,13 +6,13 @@
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 
 :root {
-    --font: white;
-    --outerbg: #282A36;
-    --innerbg:  #6272A4;
-    --foreground: #44475A;
-    --border: #BD93F9;
-    --hover: #FF79C6;
-    --outline: 0.35;
+    --font: #FFEBCD; 
+    --outerbg: #1A1A1D; 
+    --innerbg: #3E1F47; 
+    --foreground: #6D597A; 
+    --border: #DAA520;
+    --hover: #7C0A02; 
+    --outline: 0.3; 
 }
 
 
