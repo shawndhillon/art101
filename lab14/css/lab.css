@@ -1,15 +1,20 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+
 :root {
-  --font: #00ff00;
-  --outerbg: #000000;
-  --innerbg: #111111;
-  --foreground: #1a1a1a;
-  --border: #00ff00;
-  --hover: #c157ee;
-  --outline: 0.8;
+  --font: #3b1e28;
+  --outerbg: #f6f0e6;
+  --innerbg: #f3d9dc;
+  --foreground: #e7b9c4;
+  --border: #d18dcb;
+  --hover: #ff6f91;
+  --outline: 0.25;
 }
+
 
 
 .minor-section {
@@ -57,4 +62,11 @@ h1,h2,h3 {
 
 .code-section {
   border: 3px solid var(--border) !important;
+}
+
+
+.photo-section img {
+  height: 400px;      
+  width: auto;       
+  max-width: 800px;
 }

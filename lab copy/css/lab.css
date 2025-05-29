@@ -15,8 +15,6 @@
     --outline: 0.35;
 }
 
-
-
 .minor-section {
     border: solid 1px var(--border)!important; 
     background-color: var(--foreground)!important; 
@@ -48,7 +46,6 @@ h1,h2,h3 {
 .link-section p {
   color: var(--font) !important;
 }
-
 
 .link-section:hover {
   border-color: var(--hover) !important;

@@ -8,3 +8,65 @@
   max-height: 700px;
   border-radius: 10px;
 }
+
+
+:root {
+  --font: #1a1a1a;
+  --outerbg: #f5f5f5;
+  --innerbg: #ffffff;
+  --foreground: #e0e0e0;
+  --border: #cccccc;
+  --hover: #007BFF;
+  --outline: 0.25;
+}
+
+
+
+
+
+.minor-section {
+    border: solid 1px var(--border)!important; 
+    background-color: var(--foreground)!important; 
+    color: var(--font)!important; 
+}
+
+#content {
+  color: var(--font) !important; 
+  background-color: var(--innerbg)!important; 
+}
+
+body {
+  background-color: var(--outerbg)!important; 
+}
+
+h1,h2,h3 {
+ color: var(--font)!important; 
+ 
+}
+
+
+
+.link-section {
+  background-color: var(--foreground) !important; 
+  border: 2px solid var(--border) !important;
+  color: var(--font) !important;
+}
+
+.link-section p {
+  color: var(--font) !important;
+}
+
+
+.link-section:hover {
+  border-color: var(--hover) !important;
+  background-color: var(--outerbg);
+}
+
+.link-section:hover p {
+  color: var(--hover) !important;
+  text-shadow: -1px 0 rgba(0, 0, 0, var(--outline)), 0 1px rgba(0, 0, 0, var(--outline)), 1px 0 rgba(0, 0, 0, var(--outline)), 0 -1px rgba(0, 0, 0, var(--outline)) !important;
+}
+
+.code-section {
+  border: 3px solid var(--border) !important;
+}
