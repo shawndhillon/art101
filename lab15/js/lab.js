@@ -26,9 +26,21 @@ $(document).ready(function() {
           // do stuff
           console.log(data);
           let pokemon = data.name;
-          let img = data.sprites.front_default;
+          let pokemonImg = data.sprites.front_default;
+          let shiny = data.sprites.front_shiny;
+          let cry = data.cries.latest;
+          let t1 = data.types[0].type.name;
+        
+          let t2 = "";
+          if(data.types[1]){
+            t2 = data.types[1].type.name;
+          } 
 
-          $("#output").html( '<h2>' + pokemon + '</h2>'  + '<div class = "photo-section" style = "justify-content: center;">' + '<br>' + '<img  src="' + img + '"/>' + '</div>'  );
+          $("#output").html( '<h2>' + pokemon + '</h2>' + t1 + " " + t2 + '<div class = "photo-section" style = "justify-content: center;">' +
+             '<br>' + '<img  src="' + pokemonImg + '"/>' 
+              + '<img  src="' + shiny + '"/>' + '</div>'  );
+
+          new Audio(cry).play();
 
       
       },
@@ -41,3 +53,4 @@ $(document).ready(function() {
 
   });
 });
+
