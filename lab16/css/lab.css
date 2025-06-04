@@ -6,32 +6,36 @@
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 
 :root {
-    --font: white;
-    --outerbg: #282A36;
-    --innerbg:  #6272A4;
-    --foreground: #44475A;
-    --border: #BD93F9;
-    --hover: #FF79C6;
-    --outline: 0.35;
+    --font: #111111;           /* Near-black ink */
+    --outerbg: #ffffff;        /* Bright white page background */
+    --innerbg: #d9e5ef;        /* Very light blue tint for content panels */
+    --foreground: #aee1f9;    /* Light yellow (for soft contrast sections) */
+    --border: #1b1b1b;         /* Strong comic-style black outlines */
+    --hover: #ff4757;          /* Punchy red for hover — comic pop */
+    --outline: 0.4; 
 }
 
 .minor-section {
     border: solid 1px var(--border)!important; 
     background-color: var(--foreground)!important; 
     color: var(--font)!important; 
+    
 }
 
 #content {
   color: var(--font) !important; 
   background-color: var(--innerbg)!important; 
+  
 }
 
 body {
   background-color: var(--outerbg)!important; 
+  
 }
 
 h1,h2,h3 {
- color: var(--font)!important; 
+ color: var(--hover)!important; 
+ 
  
 }
 
@@ -59,4 +63,22 @@ h1,h2,h3 {
 
 .code-section {
   border: 3px solid var(--border) !important;
+  color: #e74c3c;
+}
+
+.pic-section {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+
+ 
+  align-items: flex-end;
+  padding-bottom: 1em;
+
+}
+
+.pic-section img {
+  flex-grow: 0;      
+
+  border-radius: 15px;
 }

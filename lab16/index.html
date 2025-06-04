@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/site.css">
 	<!-- Lab-specifc CSS file for any special styling of this particular page -->
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
-	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="js/lab.js" DEFER></script>
 </head>
 <body>
@@ -29,24 +29,29 @@
 			<h1>Lab 16: JSON and APIs</h1>
 			<div class="minor-section">
 					<h2>Challenge</h2>
-					<p>Restate the challenge of the lab here.</p>
+					<p> This lab challenged me to work more in depth with ajax and Json. 
+						I worked with them to create different functions utilizing the api with different endpoints to generate comics.</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Problems</h2>
-					<p>What problems arose? How did you solve them? </p>
+					<p> I struggled with accessing the api site using my endpoint. I was getting the error: "Website Link" has been blocked by CORS policy:
+						 No 'Access-Control-Allow-Origin' header is present on the requested resource. In the end by coinsulting google I was able to fix my Problems
+						by encoding my url and using a proxy to make it so that my website wouldn't be blocked.</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Results</h2>
 					<div class="code-section">
+					
+
+					<button style = "height:50px; width: 100px;  font-weight:bolder;"id="random">Random Comic</button>
+
+					<button style = "height:50px; width: 100px;  font-weight:bolder;"id="current">Most Recent Comic</button>
 					<div id="output"></div>
 
-					<button style = "height:50px; width: 100px;  font-weight:bolder;"id="activate">Generate Comic</button>
-
-					<button style = "height:50px; width: 100px;  font-weight:bolder;"id="act">Generate Comic</button>
-					<div id="output"></div>
-
+					<button id = "prev">previous</button>
+					<button id = "next">next</button>
 			</div>
 			</div>
 		</section>
